@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#ed6429" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="description" content="Hondinn private operations platform" />
+<link rel="manifest" href="/manifest.webmanifest" />
+<link rel="icon" type="image/svg+xml" href="/icon.svg" />
+<link rel="apple-touch-icon" href="/icon.svg" />
+<title>Hondinn — Platform</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<div id="app" class="shell">
+ <aside class="sidebar">
+  <div class="brand"><a class="brand-logo" href="https://hondinn.be" target="_blank" rel="noopener" aria-label="Hondinn website"><span class="brand-mark">h<span class="brand-point">.</span></span><span class="brand-name">HONDINN<small>BOUTIQUE DOG HOTEL</small></span></a><div class="platform-label">WORKSPACE <span class="brand-circle"></span></div></div>
+  <div class="side-label">WORKSPACE</div><nav id="side-nav" aria-label="Main navigation"></nav>
+  <div class="side-bottom"><span class="online-dot"></span> PRIVATE PLATFORM <div class="side-foot">Designed for the Hondinn family</div><button class="logout" id="logout" title="Sign out">Sign out</button></div>
+ </aside>
+ <div class="main-shell">
+  <header class="topbar"><button id="mobileMenu" class="mobile-menu" aria-label="Menu">☰</button><span class="mobile-wordmark">HONDINN<span>.</span></span><div class="crumb" id="breadcrumb">WORKSPACE <span> / </span> OVERVIEW</div><div class="header-right"><span class="today-label" id="top-date"></span><span class="avatar">H</span></div></header>
+  <main id="main" tabindex="-1"></main>
+ </div>
+</div>
+<div id="modal-root"></div><div id="toast" role="status" aria-live="polite"></div>
+<div id="auth-overlay" class="auth-overlay hidden"><form id="login-form" class="login-card"><div class="login-monogram">h<span>.</span></div><div class="eyebrow">PRIVATE WORKSPACE</div><h1>Welcome home.</h1><p>Sign in to Hondinn Platform.</p><label class="field"><span>Password</span><input name="password" type="password" required autocomplete="current-password" placeholder="Workspace password"></label><button class="btn primary full" type="submit">Unlock platform →</button><div id="login-error" class="form-error"></div></form></div>
+<script defer src="/app.js"></script>
+</body>
+</html>
